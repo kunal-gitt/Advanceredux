@@ -3,10 +3,10 @@ import classes from "./CartButton.module.css";
 import { uiActions } from "../../store/ui-slice";
 
 const CartButton = (props) => {
-  // const dispatch = useDispatch();
-  // const toggleCartHandler = () => {
-  //   dispatch(uiActions.toggle());
-  // };
+  const dispatch = useDispatch();
+  const toggleCartHandler = () => {
+    dispatch(uiActions.toggle());
+  };
 
   return (
     <button className={classes.button} onClick={toggleCartHandler}>
